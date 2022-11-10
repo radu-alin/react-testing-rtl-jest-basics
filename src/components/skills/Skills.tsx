@@ -8,8 +8,9 @@ export const Skills = (props: SkillsProps) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoggedIn(true);
-    }, 1001);
+    }, 1000);
   }, []);
+
   return (
     <>
       <h5>Skills</h5>

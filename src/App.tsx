@@ -4,6 +4,7 @@ import { Greet } from './components/greet/Greet';
 import { Application } from './components/application/Application';
 
 import './App.css';
+import { Skills } from './components/skills/Skills';
 
 const AppComponent = () => (
   <div className="App">
@@ -29,6 +30,7 @@ export const App = () => (
     <AppComponent />
     <Greet />
     <Application />
+    <Skills skills={['HTML', 'CSS', 'JavaScript']} />
   </>
 );
 

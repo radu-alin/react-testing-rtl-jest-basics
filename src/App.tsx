@@ -5,6 +5,7 @@ import { Application } from './components/application/Application';
 
 import './App.css';
 import { Skills } from './components/skills/Skills';
+import { Counter } from './components/counter/Counter';
 
 const AppComponent = () => (
   <div className="App">
@@ -31,6 +32,7 @@ export const App = () => (
     <Greet />
     <Application />
     <Skills skills={['HTML', 'CSS', 'JavaScript']} />
+    <Counter />
   </>
 );
 

@@ -22,7 +22,8 @@
     "test enhanced": "react-scripts test --no-cache --maxWorkers=1 --isolatedModules=true",
     "lint": "eslint --ignore-path .gitignore src",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
-    "coverage": "react-scripts test --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories,constants,test,spec}.{ts, tsx}'"
+    "coverage": "react-scripts test --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories,constants,test,spec}.{ts, tsx}'",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -63,6 +64,7 @@
     "eslint-plugin-jest-dom": "^4.0.3",
     "msw": "^0.48.1",
     "prettier": "2.7.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "husky": "^8.0.0"
   }
 }

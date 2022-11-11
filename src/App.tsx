@@ -7,6 +7,7 @@ import { Application } from './components/application/Application';
 import { Skills } from './components/skills/Skills';
 import { Counter } from './components/counter/Counter';
 import { MuiMode } from './components/mui/MuiMode';
+import { CounterTwo } from './components/counter-two/CounterTwo';
 
 import './App.css';
 
@@ -59,6 +60,9 @@ export const App = () => (
     </ComponentWrapper>
     <ComponentWrapper title="MuiMode">
       <MuiMode />
+    </ComponentWrapper>
+    <ComponentWrapper title="CounterTwo">
+      <CounterTwo count={0} />
     </ComponentWrapper>
   </AppProviders>
 );

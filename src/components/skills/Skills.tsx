@@ -13,20 +13,17 @@ export const Skills = (props: SkillsProps) => {
 
   return (
     <>
-      <h5>Skills</h5>
-      <div className="App">
-        <ul>
-          {skills &&
-            skills.map((skill) => {
-              return <li key={skill}>{skill}</li>;
-            })}
-        </ul>
-        {isLoggedIn ? (
-          <button>Start learning</button>
-        ) : (
-          <button onClick={() => setIsLoggedIn(true)}>Login</button>
-        )}
-      </div>
+      <ul>
+        {skills &&
+          skills.map((skill) => {
+            return <li key={skill}>{skill}</li>;
+          })}
+      </ul>
+      {isLoggedIn ? (
+        <button>Start learning</button>
+      ) : (
+        <button onClick={() => setIsLoggedIn(true)}>Login</button>
+      )}
     </>
   );
 };

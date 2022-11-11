@@ -23,12 +23,9 @@ describe('Users', () => {
 
   test('render error message', async () => {
     server.use(
-      rest.get(
-        'https://jsonplaceholder.typicode.com/users',
-        (req, res, ctx) => {
-          return res(ctx.status(500));
-        }
-      )
+      rest.get('https://jsonplaceholder.typicode.com/users', (req, res, ctx) => {
+        return res(ctx.status(500));
+      })
     );
     render(<Users />);
     const errorText = await screen.findByText(/error fetching users/i);

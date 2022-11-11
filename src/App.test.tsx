@@ -5,8 +5,8 @@ import App from './App';
 test('renders learn react link', () => {
   // render, create a virtualDOM
   render(<App />);
-  
-  // screen, object that contains methods to query the virtualDOM 
+
+  // screen, object that contains methods to query the virtualDOM
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });

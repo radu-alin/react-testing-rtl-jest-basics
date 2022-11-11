@@ -8,6 +8,7 @@ import { Skills } from './components/skills/Skills';
 import { Counter } from './components/counter/Counter';
 import { MuiMode } from './components/mui/MuiMode';
 import { CounterTwo } from './components/counter-two/CounterTwo';
+import { Users } from './components/users/Users';
 
 import './App.css';
 
@@ -63,6 +64,9 @@ export const App = () => (
     </ComponentWrapper>
     <ComponentWrapper title="CounterTwo">
       <CounterTwo count={0} />
+    </ComponentWrapper>
+    <ComponentWrapper title="Users">
+      <Users />
     </ComponentWrapper>
   </AppProviders>
 );
